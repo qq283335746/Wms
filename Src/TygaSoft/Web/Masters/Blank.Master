@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Blank.master.cs" Inherits="TygaSoft.Web.Masters.Blank" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>仓储配送一体化平台</title>
+    <link href="~/Styles/Main.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/Plugins/Jeasyui15/themes/bootstrap/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/Plugins/Jeasyui15/themes/icon.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Admin.css" rel="stylesheet" type="text/css" />
+    <script src="/wms/Scripts/Plugins/Jeasyui15/jquery.min.js" type="text/javascript"></script>
+    <script src="/wms/Scripts/Plugins/Jeasyui15/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="/wms/Scripts/Plugins/Jeasyui15/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="/wms/Scripts/JeasyuiExtend.js" type="text/javascript"></script>
+    <script src="/wms/Scripts/JeasyuiHelper.js" type="text/javascript"></script>
+    <script src="/wms/Scripts/Menus.js" type="text/javascript"></script>
+    <script src="/wms/Scripts/Common.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="cphMain" runat="server" />
+    </div>
+    </form>
+    <div id="dlgWaiting" data-options="closed:true,modal:true,collapsible:false,border:false" title="" style="width:32px;height:32px;padding:0;margin:0;"></div>
+
+</body>
+</html>

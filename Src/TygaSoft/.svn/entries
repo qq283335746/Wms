@@ -1,0 +1,143 @@
+10
+
+dir
+2016
+http://115.28.5.84:8099/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft
+http://115.28.5.84:8099/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6
+
+
+
+2017-07-09T08:36:25.495631Z
+1812
+283335746
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eeecd8e6-aa2a-e146-8018-c4464320432e
+
+WcfCA
+dir
+
+CustomProvider
+dir
+
+IMessaging
+dir
+
+DALFactory
+dir
+
+WcfWS
+dir
+
+CacheDependencyFactory
+dir
+
+TygaSoft.sln
+file
+
+
+
+
+2018-09-25T07:19:07.203125Z
+4e7fc3e6473af6c1e85a852e1956f5d0
+2017-07-09T08:36:25.495631Z
+1812
+283335746
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23399
+
+SysException
+dir
+
+WcfService
+dir
+
+WcfModel
+dir
+
+Model
+dir
+
+TaskProcessor
+dir
+
+MessagingFactory
+dir
+
+SecurityWeb
+dir
+
+.vs
+dir
+
+SqlServerDAL
+dir
+
+IDAL
+dir
+
+DBUtility
+dir
+
+BLL
+dir
+
+TableCacheDependency
+dir
+
+MsmqMessaging
+dir
+
+ICacheDependency
+dir
+
+Libraries
+dir
+
+TaskWS
+dir
+
+WebHelper
+dir
+
+Web
+dir
+
+SysHelper
+dir
+
+packages
+dir
+

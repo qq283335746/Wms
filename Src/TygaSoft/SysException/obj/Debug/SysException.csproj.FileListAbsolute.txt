@@ -1,0 +1,7 @@
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\SysException\bin\Debug\TygaSoft.SysException.dll
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\SysException\bin\Debug\TygaSoft.SysException.pdb
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\SysException\bin\Debug\log4net.dll
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\SysException\bin\Debug\log4net.xml
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\SysException\obj\Debug\ResolveAssemblyReference.cache
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\SysException\obj\Debug\TygaSoft.SysException.dll
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\SysException\obj\Debug\TygaSoft.SysException.pdb

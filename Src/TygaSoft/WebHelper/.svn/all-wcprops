@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper
+END
+BindControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/BindControl.cs
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/packages.config
+END
+HttpClientHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/HttpClientHelper.cs
+END
+OpenXmlHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/OpenXmlHelper.cs
+END
+ProfileServiceProxy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/ProfileServiceProxy.cs
+END
+RoleServiceProxy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/RoleServiceProxy.cs
+END
+WebHelper.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/WebHelper.csproj.user
+END
+WebCommon.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/WebCommon.cs
+END
+PrintOrder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/PrintOrder.cs
+END
+ResResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/ResResult.cs
+END
+MessageBox.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/MessageBox.cs
+END
+BarcodeHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/BarcodeHelper.cs
+END
+TempFolder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/TempFolder.cs
+END
+Auth.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/Auth.cs
+END
+FilesHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/FilesHelper.cs
+END
+SitemapHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/SitemapHelper.cs
+END
+AuthenticationServiceProxy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/AuthenticationServiceProxy.cs
+END
+ImagesHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/ImagesHelper.cs
+END
+ConfigHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/ConfigHelper.cs
+END
+UploadFilesHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/UploadFilesHelper.cs
+END
+WebHelper.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/WebHelper/WebHelper.csproj
+END

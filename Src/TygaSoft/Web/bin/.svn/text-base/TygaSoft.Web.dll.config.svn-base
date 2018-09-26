@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  有关如何配置 ASP.NET 应用程序的详细信息，请访问
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
+    <section name="rewriter" requirePermission="false" type="Intelligencia.UrlRewriter.Configuration.RewriterConfigurationSectionHandler, Intelligencia.UrlRewriter"/>
+  </configSections>
+  <connectionStrings>
+    <add name="WmsDbConnString" connectionString="Data Source=115.28.5.84,1477;Initial Catalog=WmsDb;User ID=283335746;Password=tyga@2016" providerName="System.Data.SqlClient" />
+    <add name="AspnetDbConnString" connectionString="Data Source=115.28.5.84,1477;Initial Catalog=TygaSoftAspnetDb;User ID=283335746;Password=tyga@2016" providerName="System.Data.SqlClient" />
+    <add name="InfoneDbConnString" connectionString="Data Source=120.25.214.85,1488;Initial Catalog=InfoneDb;User ID=283335746;Password=tyga@2016" providerName="System.Data.SqlClient" />
+    <!--<add name="WmsDbConnString" connectionString="Data Source=120.25.214.85,1488;Initial Catalog=WmsDb;User ID=283335746;Password=tyga@2016" providerName="System.Data.SqlClient"/>
+    <add name="AspnetDbConnString" connectionString="Data Source=120.25.214.85,1488;Initial Catalog=TygaSoftAspnetDb;User ID=283335746;Password=tyga@2016" providerName="System.Data.SqlClient"/>
+    <add name="InfoneDbConnString" connectionString="Data Source=120.25.214.85,1488;Initial Catalog=InfoneDb;User ID=283335746;Password=tyga@2016" providerName="System.Data.SqlClient"/>-->
+  </connectionStrings>
+  <appSettings>
+    <add key="WebDAL" value="TygaSoft.SqlServerDAL"/>
+    <add key="AESEncryptKey" value="sw2016-tygaweb-com"/>
+    <add key="FilesRoot" value="~/Files"/>
+    <!-- 上传文件大小限制 -->
+    <add key="UploadFileSize" value="5120000"/>
+    <!-- 生成缩略图 -->
+    <add key="PC" value="800*800,350*350,50*50"/>
+    <add key="Android" value="350*350,150*150,60*60"/>
+    <add key="IOS" value="350*350,150*150,60*60"/>
+
+    <!--地图-->
+    <add key="BaiduMapAk" value="NnwxmFFvpZVb7GIAf6i7NMzUMj40wlXu"/>
+
+    <!-- Enable data caching -->
+    <add key="EnableCaching" value="false"/>
+    <add key="CacheDependencyAssembly" value="TygaSoft.TableCacheDependency,TygaSoft.TableCacheDependency"/>
+    <add key="CacheDatabaseName" value="WmsDb"/>
+    <add key="MenusCacheDuration" value="12"/>
+    <add key="MenusTableDependency" value="Menus"/>
+    <add key="SysEnumCacheDuration" value="12"/>
+    <add key="SysEnumTableDependency" value="SysEnum"/>
+    <!-- processing options (Asynch/Synch) -->
+    <!-- Msmq -->
+    <add key="MsmqMessaging" value="TygaSoft.MsmqMessaging"/>
+    <add key="WmsBarcodeScanQueue" value=".\private$\WmsBarcodeScanQueue"/>
+    <add key="WmsRunQueue" value=".\private$\WmsRunQueue"/>
+    <add key="WmsScanQueue" value=".\private$\WmsScanQueue"/>
+
+  </appSettings>
+  <system.web>
+    <compilation debug="true" targetFramework="4.0" />
+    <authentication mode="Forms">
+      <forms defaultUrl="~/" loginUrl="~/login.html" name=".TygaSoft2WmsFm" path="/" timeout="720" protection="All" slidingExpiration="false" requireSSL="false" cookieless="UseCookies"/>
+    </authentication>
+    <membership defaultProvider="MsSqlMembershipProvider" hashAlgorithmType="SHA1">
+      <providers>
+        <clear/>
+        <add name="MsSqlMembershipProvider" type="System.Web.Security.SqlMembershipProvider" applicationName="TygaSoftApp" connectionStringName="AspnetDbConnString" requiresUniqueEmail="false" enablePasswordRetrieval="false" enablePasswordReset="true" requiresQuestionAndAnswer="false" passwordFormat="Hashed" minRequiredPasswordLength="6" minRequiredNonalphanumericCharacters="0" maxInvalidPasswordAttempts="15" passwordAttemptWindow="10" passwordStrengthRegularExpression="^[a-zA-Z0-9_\@\-\!\#\$\%\^\*\.\~]{6,30}$"/>
+      </providers>
+    </membership>
+    <roleManager defaultProvider="MsSqlRoleProvider" enabled="true" cookieName=".TygaSoft2WmsRole" cookiePath="/" cookieProtection="All" cookieRequireSSL="false" cookieSlidingExpiration="false" cookieTimeout="480" createPersistentCookie="false" cacheRolesInCookie="true" maxCachedResults="25">
+      <providers>
+        <clear/>
+        <add name="MsSqlRoleProvider" type="System.Web.Security.SqlRoleProvider" applicationName="TygaSoftApp" connectionStringName="AspnetDbConnString"/>
+      </providers>
+    </roleManager>
+    <anonymousIdentification enabled="true"/>
+    <profile automaticSaveEnabled="false" enabled="true" defaultProvider="SqlProfileProvider" inherits="TygaSoft.CustomProvider.CustomProfileCommon">
+      <providers>
+        <clear/>
+        <add name="SqlProfileProvider" type="System.Web.Profile.SqlProfileProvider" applicationName="TygaSoftApp" connectionStringName="AspnetDbConnString" description=""/>
+      </providers>
+    </profile>
+    <caching>
+      <sqlCacheDependency enabled="false" pollTime="10000">
+        <databases>
+          <add name="AspnetDb" connectionStringName="AspnetDbConnString" pollTime="10000"/>
+          <add name="WmsDb" connectionStringName="WmsDbConnString" pollTime="10000"/>
+        </databases>
+      </sqlCacheDependency>
+    </caching>
+    <siteMap defaultProvider="CustomSiteMapProvider" enabled="true">
+      <providers>
+        <add name="CustomSiteMapProvider" type="TygaSoft.CustomProvider.CustomSiteMapProvider,TygaSoft.CustomProvider" />
+      </providers>
+    </siteMap>
+    <!--<siteMap defaultProvider="XmlSiteMapProvider" enabled="true">
+      <providers>
+        <add name="XmlSiteMapProvider" type="System.Web.XmlSiteMapProvider" siteMapFile="Web.sitemap" description="Site Map Default"/>
+        <add name="CustomerSiteMapProvider" type="TygaSoft.CustomProvider.CustomerSiteMapProvider,TygaSoft.CustomProvider" siteMapFile="~/App_Data/CustomerSitemap.xml" />
+      </providers>
+    </siteMap>-->
+    <!--<httpModules>
+      <add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule,Intelligencia.UrlRewriter"/>
+    </httpModules>-->
+  </system.web>
+  <system.webServer>
+    <modules runAllManagedModulesForAllRequests="true">
+      <add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule,Intelligencia.UrlRewriter"/>
+    </modules>
+  </system.webServer>
+  <rewriter file="~/App_Data/UrlRewriter.xml"/>
+
+  <system.serviceModel>
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" multipleSiteBindingsEnabled="true"/>
+    <services>
+      <service name="TygaSoft.WcfService.PdaService">
+        <endpoint address="" binding="webHttpBinding" behaviorConfiguration="AjaxBehavior" contract="TygaSoft.WcfService.IPda"/>
+      </service>
+      <service name="TygaSoft.WcfService.SecurityService">
+        <endpoint address="" binding="webHttpBinding" behaviorConfiguration="AjaxBehavior" contract="TygaSoft.WcfService.ISecurity"/>
+      </service>
+      <service name="TygaSoft.WcfService.WmsService">
+        <endpoint address="" binding="webHttpBinding" behaviorConfiguration="AjaxBehavior" contract="TygaSoft.WcfService.IWms"/>
+      </service>
+    </services>
+    <bindings>
+      <webHttpBinding>
+        <binding>
+          <security mode="None"></security>
+        </binding>
+      </webHttpBinding>
+      <basicHttpBinding>
+        <binding>
+          <security mode="None"></security>
+        </binding>
+      </basicHttpBinding>
+      <wsHttpBinding>
+        <binding>
+          <security mode="None"></security>
+        </binding>
+      </wsHttpBinding>
+      <netMsmqBinding>
+        <binding durable="false" exactlyOnce="false">
+          <security mode="None"/>
+        </binding>
+      </netMsmqBinding>
+    </bindings>
+    <behaviors>
+      <serviceBehaviors>
+        <!--<behavior>
+          <serviceMetadata httpGetEnabled="True"/>
+          <serviceDebug includeExceptionDetailInFaults="False"/>
+        </behavior>-->
+      </serviceBehaviors>
+      <endpointBehaviors>
+        <behavior name="AjaxBehavior">
+          <webHttp/>
+          <!--<enableWebScript />-->
+        </behavior>
+      </endpointBehaviors>
+    </behaviors>
+    <!--<client>
+
+      <endpoint address="http://www.tygaweb.com/Security/Service/AuthenticationService.svc" binding="wsHttpBinding" contract="AuthenticationService" />
+      <endpoint address="http://www.tygaweb.com/Security/Service/RoleService.svc" binding="wsHttpBinding" contract="RoleService" />
+      <endpoint address="http://www.tygaweb.com/Security/Service/ProfileService.svc" binding="wsHttpBinding" contract="ProfileService" />
+    </client>-->
+  </system.serviceModel>
+</configuration>

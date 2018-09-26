@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL
+END
+PandianProduct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/PandianProduct.cs
+END
+RandomCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/RandomCode.cs
+END
+Zone.cs
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Zone.cs
+END
+Product.cs
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Product.cs
+END
+MesOrder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/MesOrder.cs
+END
+MesCategory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/MesCategory.cs
+END
+OrderPickProduct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/OrderPickProduct.cs
+END
+ScanQueueAsyn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/ScanQueueAsyn.cs
+END
+RFID.cs
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/RFID.cs
+END
+MesProduct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/MesProduct.cs
+END
+DoTask.cs
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/DoTask.cs
+END
+OrderSendProduct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/OrderSendProduct.cs
+END
+OrderReceipt.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/OrderReceipt.cs
+END
+InfoneDeviceBorrowRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/InfoneDeviceBorrowRecord.cs
+END
+FeatureUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/FeatureUser.cs
+END
+OrderPicked.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/OrderPicked.cs
+END
+LogisticsDistribution.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/LogisticsDistribution.cs
+END
+InfoneCustomer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/InfoneCustomer.cs
+END
+SitePicture.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/SitePicture.cs
+END
+ShelfMission.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/ShelfMission.cs
+END
+RunQueueAsyn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/RunQueueAsyn.cs
+END
+BLL.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/BLL.csproj
+END
+StockLocation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/StockLocation.cs
+END
+SiteMenus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/SiteMenus.cs
+END
+OrderRandom.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/OrderRandom.cs
+END
+Category.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Category.cs
+END
+StockLocationProduct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/StockLocationProduct.cs
+END
+SiteMulti.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/SiteMulti.cs
+END
+Vehicle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Vehicle.cs
+END
+InfoneProjectReportPrepare.cs
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/InfoneProjectReportPrepare.cs
+END
+BLL.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/BLL.csproj.user
+END
+StockProduct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/StockProduct.cs
+END
+OrderSend.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/OrderSend.cs
+END
+OrderReceiptRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/OrderReceiptRecord.cs
+END
+Applications.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Applications.cs
+END
+OrderReceiptProduct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/OrderReceiptProduct.cs
+END
+Package.cs
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Package.cs
+END
+BarcodeTemplate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/BarcodeTemplate.cs
+END
+BarcodeScanAsyn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/BarcodeScanAsyn.cs
+END
+InfoneDeviceRepairRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/InfoneDeviceRepairRecord.cs
+END
+Customer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Customer.cs
+END
+Role.cs
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Role.cs
+END
+ShelfMissionProduct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/ShelfMissionProduct.cs
+END
+Company.cs
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Company.cs
+END
+HwCost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/HwCost.cs
+END
+SiteRoles.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/SiteRoles.cs
+END
+StockWarning.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/StockWarning.cs
+END
+Pandian.cs
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/!svn/ver/1812/VSWorkspace/Saas/Wms/%E6%BA%90%E7%A0%81/TygaSoft/BLL/Pandian.cs
+END

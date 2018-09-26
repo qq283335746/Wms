@@ -1,0 +1,5 @@
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\ICacheDependency\bin\Debug\TygaSoft.ICacheDependency.dll
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\ICacheDependency\bin\Debug\TygaSoft.ICacheDependency.pdb
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\ICacheDependency\obj\Debug\ResolveAssemblyReference.cache
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\ICacheDependency\obj\Debug\TygaSoft.ICacheDependency.dll
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\ICacheDependency\obj\Debug\TygaSoft.ICacheDependency.pdb

@@ -1,0 +1,5 @@
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\Model\bin\Debug\TygaSoft.Model.dll
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\Model\bin\Debug\TygaSoft.Model.pdb
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\Model\obj\Debug\ResolveAssemblyReference.cache
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\Model\obj\Debug\TygaSoft.Model.dll
+C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\Model\obj\Debug\TygaSoft.Model.pdb
