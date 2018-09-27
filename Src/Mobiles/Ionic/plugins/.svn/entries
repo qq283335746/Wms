@@ -1,0 +1,123 @@
+10
+
+dir
+2017
+http://115.28.5.84:8099/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6/VSWorkspace/ApacheCordova/Ionic/100004/TygaSoft/Wms/plugins
+http://115.28.5.84:8099/svn/%E5%A4%A9%E6%B6%AF%E5%AD%A4%E5%B2%B8%E8%BD%AF%E4%BB%B6
+
+
+
+2017-07-08T04:21:34.653553Z
+1808
+283335746
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eeecd8e6-aa2a-e146-8018-c4464320432e
+
+cordova-plugin-statusbar
+dir
+
+cordova-plugin-splashscreen
+dir
+
+fetch.json
+file
+
+
+
+
+2018-09-27T05:23:46.750000Z
+37a3bb195288867f0d019d899644dd45
+2017-07-08T04:21:34.653553Z
+1808
+283335746
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1907
+
+cordova-plugin-network-information
+dir
+
+cordova-plugin-whitelist
+dir
+
+tygasoft-plugin-rfidscan
+dir
+
+cordova-plugin-device
+dir
+
+cordova-plugin-x-toast
+dir
+
+android.json
+file
+
+
+
+
+2018-09-27T05:23:46.734375Z
+107b9e0b00e53d63c385cace2a86e71c
+2017-07-08T04:21:34.653553Z
+1808
+283335746
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1007
+
+cordova-plugin-console
+dir
+
+ionic-plugin-keyboard
+dir
+

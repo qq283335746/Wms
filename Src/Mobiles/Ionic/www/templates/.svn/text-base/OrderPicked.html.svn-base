@@ -1,0 +1,19 @@
+﻿<ion-view view-title="拣货任务">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-icon-right" ng-repeat="item in ListData" href="#/tab/OrderPicks/{{item}}">
+                单据：{{item.OrderCode}}
+                <span ng-class="getStyle(item)">{{item.Status == 1 ? '新':item.StatusName}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+        </ion-list>
+        <div class="dg-list" ng-hide="ListData.length > 0">
+            <div class="box">
+                <div class="row">
+                    <div class="col">暂无数据</div>
+                </div>
+            </div>
+        </div>
+            
+</ion-content>
+</ion-view>

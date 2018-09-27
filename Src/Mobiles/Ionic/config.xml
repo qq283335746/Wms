@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.sw.wms" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>WMS</name>
+  <description>
+        智能仓储配送平台手持终端
+    </description>
+  <author email="283335746@qq.com" href="http://www.tygaweb.com/sw">
+      天涯孤岸
+    </author>
+  <content src="index.html" />
+  <access origin="*" />
+  <feature name="StatusBar">
+    <param name="ios-package" onload="true" value="CDVStatusBar" />
+  </feature>
+  <icon src="resources/icon.png" />
+  <platform name="android">
+    <splash src="resources/splash.png" />
+  </platform>
+  <preference name="webviewbounce" value="false" />
+  <preference name="UIWebViewBounce" value="false" />
+  <preference name="DisallowOverscroll" value="true" />
+  <preference name="android-minSdkVersion" value="16" />
+  <preference name="BackupWebStorage" value="none" />
+  <preference name="KeepRunning" value="True" />
+  <preference name="ShowTitle" value="True" />
+  <preference name="InAppBrowserStorageEnabled" value="True" />
+  <preference name="SuppressesIncrementalRendering" value="True" />
+  <preference name="windows-target-version" value="10.0" />
+  <preference name="SplashScreen" value="screen" />
+  <preference name="SplashShowOnlyFirstTime" value="false" />
+  <preference name="SplashScreenDelay" value="5000" />
+  <plugin name="cordova-plugin-device" spec="~1.1.1" />
+  <plugin name="cordova-plugin-console" spec="~1.0.2" />
+  <plugin name="cordova-plugin-whitelist" spec="~1.2.1" />
+  <plugin name="cordova-plugin-statusbar" spec="~2.1.0" />
+  <plugin name="ionic-plugin-keyboard" spec="~1.0.8" />
+  <plugin name="cordova-plugin-network-information" version="1.2.1" />
+  <plugin name="cordova-plugin-splashscreen" version="3.2.2" />
+  <plugin name="cordova-plugin-x-toast" version="2.5.2" />
+  <plugin name="tygasoft-plugin-rfidscan" version="0.0.1" src="D:\VS2015\ApacheCordova\MyPlugins\tygasoft-plugin-rfidscan" />
+</widget>

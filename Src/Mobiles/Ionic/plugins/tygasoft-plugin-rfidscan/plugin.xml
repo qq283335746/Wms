@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="tygasoft-plugin-rfidscan" version="0.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>RfidScan</name>
+  <js-module name="RfidScan" src="www/RfidScan.js">
+    <clobbers target="RfidScan" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="RfidScan">
+        <param name="android-package" value="com.tygasoft.plugins.RfidScan" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    <source-file src="src/android/RfidScan.java" target-dir="src/com/tygasoft/plugins" />
+    <source-file src="src/android/UfhData.java" target-dir="src/com/UHF/scanlable" />
+    <source-file src="src/android/UhfLib.java" target-dir="src/com/UHF/scanlable" />
+    <source-file src="src/android/Util.java" target-dir="src/com/UHF/scanlable" />
+    <source-file src="src/android/libs/armeabi/libUhf_jni.so" target-dir="libs/armeabi" />
+  </platform>
+</plugin>

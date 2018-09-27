@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.sw.wms"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.sw.wms"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.sw.wms"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.sw.wms"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.sw.wms"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.sw.wms"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.sw.wms"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.sw.wms"
+        },
+        "tygasoft-plugin-rfidscan": {
+            "PACKAGE_NAME": "com.sw.wms"
+        }
+    },
+    "dependent_plugins": {}
+}

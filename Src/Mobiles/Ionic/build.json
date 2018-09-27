@@ -1,0 +1,11 @@
+{
+     "android": {
+         "release": {
+             "keystore": "D:\\Keystores\\com-sw-wms.keystore",
+             "storePassword": "com-sw-wms2016",
+             "alias": "com-sw",
+             "password" : "com-sw-wms2016",
+             "keystoreType": ""
+         }
+     }
+ }
