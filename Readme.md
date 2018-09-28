@@ -2,7 +2,7 @@ Wms（智能仓储配送一体化平台）
 
 Wms（智能仓储配送一体化平台）技术点标签：
 
-后端：webservice、wcf、linq、ado.net、sql server
+后端：webservice、wcf、linq、ado.net、sql server、三层架构
 
 前端：jquery、easyui、ionic、cordova
 
