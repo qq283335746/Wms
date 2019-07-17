@@ -1,0 +1,71 @@
+﻿<ion-view view-title="{{ItemInfo.ProductCode}}">
+    <ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-plus" ng-click="onToggleMenu()"></a>
+    </ion-nav-buttons>
+    <ion-content>
+
+        <div class="row">
+            <div class="col">货品名称：{{ItemInfo.ProductName}}</div>
+        </div>
+        <div class="row">
+            <div class="col">{{ModelData.StayQtyTitle}}：{{ItemInfo.RemainQty}}</div>
+        </div>
+        <div class="fm">
+            <div class="row">
+                <div class="col col-20 title"><span>*</span>库位：</div>
+                <div class="col col-80"><input type="text" ng-model="ModelData.StockLocationCode" ng-change="onStockLocationCodeChanged()" /></div>
+            </div>
+            <div class="row">
+                <div class="col col-20 title"><span>*</span>数量：</div>
+                <div class="col col-80"><input type="text" ng-model="ModelData.Qty" pattern="^(\d+)$" /> </div>
+            </div>
+        </div>
+        
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="onSure()">确定</button>
+        </div>
+
+        <div class="padding" ng-hide="keyName == 'PandianProduct'">
+            <ul class="slide-tab">
+                <li ng-class="slideIndex == 0 ? 'current':''"><a ng-click="activeSlide(0)">推荐库位<br /> <i class="badge badge-positive">{{ModelData.TotalBest}}</i></a></li>
+                <li ng-class="slideIndex == 1 ? 'current':''"><a ng-click="activeSlide(1)">其它库位<br /> <i class="badge badge-positive">{{ModelData.TotalOther}}</i></a></li>
+            </ul>
+        </div>
+        <div class="pdlr10 dg-list" ng-show="slideIndex == 0">
+            <div class="box" ng-repeat="item in SlBestData">
+                <div class="row">
+                    <div class="col col-80" ng-click="toggleGroup(item)" ng-class="{active: isGroupShown(item)}">库位：{{item.StockLocationCode}}</div>
+                    <div class="col col-20">
+                        <a ng-click="onRowSelect(item)">
+                            <span class="badge badge-positive">选择</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="subbox" ng-show="isGroupShown(item)">
+                    <div class="row">
+                        <div class="col">库位名称：{{item.StockLocationName}}</div>
+                        <div class="col" ng-hide="keyName == 'PandianProduct'">库位最大容量：{{item.MaxQty}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pdlr10 dg-list" ng-show="slideIndex == 1">
+            <div class="box" ng-repeat="item in SlOtherData">
+                <div class="row">
+                    <div class="col col-80" ng-click="toggleGroup(item)" ng-class="{active: isGroupShown(item)}">库位：{{item.StockLocationCode}}</div>
+                    <div class="col col-20">
+                        <a ng-click="onRowSelect(item)">
+                            <span class="badge badge-positive">选择</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="subbox" ng-show="isGroupShown(item)">
+                    <div class="row">
+                        <div class="col">库位名称：{{item.StockLocationName}}</div>
+                        <div class="col">库位最大容量：{{item.MaxQty}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

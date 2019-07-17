@@ -1,7 +1,0 @@
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\CacheDependencyFactory\bin\Debug\TygaSoft.CacheDependencyFactory.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\CacheDependencyFactory\bin\Debug\TygaSoft.CacheDependencyFactory.pdb
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\CacheDependencyFactory\bin\Debug\TygaSoft.ICacheDependency.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\CacheDependencyFactory\bin\Debug\TygaSoft.ICacheDependency.pdb
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\CacheDependencyFactory\obj\Debug\ResolveAssemblyReference.cache
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\CacheDependencyFactory\obj\Debug\TygaSoft.CacheDependencyFactory.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\CacheDependencyFactory\obj\Debug\TygaSoft.CacheDependencyFactory.pdb

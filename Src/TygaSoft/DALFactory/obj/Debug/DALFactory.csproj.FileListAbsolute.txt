@@ -1,9 +1,0 @@
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\bin\Debug\TygaSoft.DALFactory.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\bin\Debug\TygaSoft.DALFactory.pdb
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\bin\Debug\TygaSoft.IDAL.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\bin\Debug\TygaSoft.Model.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\bin\Debug\TygaSoft.IDAL.pdb
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\bin\Debug\TygaSoft.Model.pdb
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\obj\Debug\ResolveAssemblyReference.cache
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\obj\Debug\TygaSoft.DALFactory.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\DALFactory\obj\Debug\TygaSoft.DALFactory.pdb

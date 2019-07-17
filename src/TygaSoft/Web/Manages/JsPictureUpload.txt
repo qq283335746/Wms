@@ -1,0 +1,81 @@
+﻿
+<script type="text/javascript">
+
+var {DlgId} = {
+	Init: function () {
+		this.InitElement();
+	},
+	InitElement: function () {
+	    $("#file1").attr("name","{DlgId}_file1");
+	    $("#file1").attr("id","{DlgId}_file1");
+		$('#{DlgId}_file1').filebox({
+            buttonText: '选择文件',
+            prompt: '选择图片'
+        })
+		$("#dlgUploadFm").removeAttr("action");
+		$("#dlgUploadFm").attr("id", "dlgUploadFm_{DlgId}");
+	},
+	OnToolbarAdd:function(){
+        var currDlgFm = $("#dlgUploadFm_{DlgId}");
+        var rowLen = currDlgFm.children("div").length;
+        rowLen++;
+        var newRow = $("<div class=\"mb10\"><input type=\"text\" id=\"{DlgId}_file" + rowLen + "\" name=\"{DlgId}_file" + rowLen + "\" style=\"width:500px;\" /><a href=\"#\" onclick=\"$(this).parent().remove();return false;\" style=\"margin-left:10px;\">删 除</a></div>");
+        currDlgFm.append(newRow);
+        newRow.find("#{DlgId}_file" + rowLen + "").filebox({
+            buttonText: '选择文件',
+            prompt: '选择图片'
+        })
+        newRow.find("a:last").linkbutton({
+            iconCls: 'icon-remove',
+            plain: true
+        });
+	},
+	OnUpload: function () {
+        try {
+            $.messager.progress({
+                title: '请稍等',
+                msg: '正在执行...'
+            });
+            $('#dlgUploadFm_{DlgId}').form('submit', {
+                url: '{SubmitUrl}',
+                onSubmit: function (param) {
+                    var hasNotFile = true;
+                    $('#dlgUploadFm_{DlgId}').find("[class*=filebox-f]").each(function () {
+                        if ($.trim($(this).filebox('getValue')) == "") {
+                            hasNotFile = false;
+                        }
+                    })
+                    if (!hasNotFile) {
+					    $.messager.progress('close');
+                        $.messager.alert('错误提示', "包含一个或多个未选择文件，无法上传，请检查！", 'error');
+                        return false;
+                    }
+                    param.reqName = "{FunName}";
+                    return true;
+                },
+                success: function (data) {
+                    $.messager.progress('close');
+                    var data = eval('(' + data + ')');
+                    if (!data.success) {
+                        $.messager.alert('错误提示', data.message, 'error');
+                        return false;
+                    }
+                    jeasyuiFun.show("温馨提醒", data.message);
+                    $("#{DlgId}").dialog('close');
+
+					{CallBack}
+                }
+            });
+        }
+        catch (e) {
+            $.messager.progress('close');
+            $.messager.alert('错误提醒', e.name + ": " + e.message, 'error');
+        }
+    }
+}
+
+$(function () { 
+    {DlgId}.Init();          
+})
+
+</script>

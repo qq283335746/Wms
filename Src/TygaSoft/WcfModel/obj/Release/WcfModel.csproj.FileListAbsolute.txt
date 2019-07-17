@@ -1,5 +1,0 @@
-D:\Visual Studio 2010 Workspace\广州矽云信息科技有限公司\仓储物流一体化（WMS）\源码\TygaSoft\WcfModel\bin\Release\TygaSoft.WcfModel.dll
-D:\Visual Studio 2010 Workspace\广州矽云信息科技有限公司\仓储物流一体化（WMS）\源码\TygaSoft\WcfModel\bin\Release\TygaSoft.WcfModel.pdb
-D:\Visual Studio 2010 Workspace\广州矽云信息科技有限公司\仓储物流一体化（WMS）\源码\TygaSoft\WcfModel\obj\Release\TygaSoft.WcfModel.dll
-D:\Visual Studio 2010 Workspace\广州矽云信息科技有限公司\仓储物流一体化（WMS）\源码\TygaSoft\WcfModel\obj\Release\TygaSoft.WcfModel.pdb
-D:\Visual Studio 2010 Workspace\广州矽云信息科技有限公司\仓储物流一体化（WMS）\源码\TygaSoft\WcfModel\obj\Release\WcfModel.csprojResolveAssemblyReference.cache

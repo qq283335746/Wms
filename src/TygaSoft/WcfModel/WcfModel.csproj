@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F48605DF-FCCB-4427-A45E-8E45CE1EF000}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TygaSoft.WcfModel</RootNamespace>
+    <AssemblyName>TygaSoft.WcfModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarcodeScanQueueModel.cs" />
+    <Compile Include="BarcodeTemplateFmModel.cs" />
+    <Compile Include="BestStockLocationModel.cs" />
+    <Compile Include="CategoryModel.cs" />
+    <Compile Include="DeviceRepairRecordFmModel.cs" />
+    <Compile Include="DeviceRepairRecordModel.cs" />
+    <Compile Include="DlgZoneModel.cs" />
+    <Compile Include="DlgPackageModel.cs" />
+    <Compile Include="DlgProductModel.cs" />
+    <Compile Include="DlgCustomerModel.cs" />
+    <Compile Include="DlgStockLocationModel.cs" />
+    <Compile Include="InfoneCustomerFmModel.cs" />
+    <Compile Include="InfoneProjectReportPrepareFmModel.cs" />
+    <Compile Include="ListModel.cs" />
+    <Compile Include="Mes\MesOrderModel.cs" />
+    <Compile Include="Pda\PdaLogisticsDistributionModel.cs" />
+    <Compile Include="MenuAuthModel.cs" />
+    <Compile Include="MenusPermissionModel.cs" />
+    <Compile Include="OrderPrevReceiptModel.cs" />
+    <Compile Include="OrderReceiptFmModel.cs" />
+    <Compile Include="OrderPrevReceiptProductFmModel.cs" />
+    <Compile Include="OrderReceiptModel.cs" />
+    <Compile Include="OrderReceiptProductFmModel.cs" />
+    <Compile Include="OrderReceiptProductModel.cs" />
+    <Compile Include="OrderSelectProductModel.cs" />
+    <Compile Include="PandianFmModel.cs" />
+    <Compile Include="PandianProductFmModel.cs" />
+    <Compile Include="Pda\PdaOrderPickProductModel.cs" />
+    <Compile Include="Pda\RFIDModel.cs" />
+    <Compile Include="ProductModel.cs" />
+    <Compile Include="RoleMenuFmModel.cs" />
+    <Compile Include="Send\OrderSendFmModel.cs" />
+    <Compile Include="Pda\PdaOrderSendModel.cs" />
+    <Compile Include="Send\OrderSendModel.cs" />
+    <Compile Include="Pda\PdaOrderReceiptRecordModel.cs" />
+    <Compile Include="PackageModel.cs" />
+    <Compile Include="Pda\PdaShelfMissionFmModel.cs" />
+    <Compile Include="Pda\PdaShelfMissionModel.cs" />
+    <Compile Include="Pda\PdaShelfMissionProductFmModel.cs" />
+    <Compile Include="Pda\PdaShelfMissionProductModel.cs" />
+    <Compile Include="Pda\PdaSkuModel.cs" />
+    <Compile Include="OrderPrintModel.cs" />
+    <Compile Include="ResResultModel.cs" />
+    <Compile Include="RoleModel.cs" />
+    <Compile Include="Send\OrderSendProductFmModel.cs" />
+    <Compile Include="Send\OrderSendProductModel.cs" />
+    <Compile Include="ShelfMissionProductFmModel.cs" />
+    <Compile Include="ShelfMissionProductModel.cs" />
+    <Compile Include="StockLocationFmModel.cs" />
+    <Compile Include="ShelfMissionFmModel.cs" />
+    <Compile Include="StockLocationModel.cs" />
+    <Compile Include="StockLocationProductModel.cs" />
+    <Compile Include="StockProductModel.cs" />
+    <Compile Include="StockWarningFmModel.cs" />
+    <Compile Include="ShelfMissionModel.cs" />
+    <Compile Include="StockWarningModel.cs" />
+    <Compile Include="SupplierModel.cs" />
+    <Compile Include="ProductFmModel.cs" />
+    <Compile Include="Take\OrderPickedProductModel.cs" />
+    <Compile Include="ToPdfModel.cs" />
+    <Compile Include="UpdateOrderPrevReceiptProductFmModel.cs" />
+    <Compile Include="UpdateOrderReceiptProductFmModel.cs" />
+    <Compile Include="UserModel.cs" />
+    <Compile Include="VehicleFmModel.cs" />
+    <Compile Include="Wechat\StockProductNoticeModel.cs" />
+    <Compile Include="ZoneModel.cs" />
+    <Compile Include="CustomerModel.cs" />
+    <Compile Include="MenusModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

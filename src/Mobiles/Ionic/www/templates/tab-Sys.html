@@ -1,0 +1,10 @@
+﻿<ion-view view-title="智能仓储配送平台">
+  <ion-content>
+      <ion-list>
+          <ion-item class="item-icon-right" ng-repeat="item in ListData" ng-click="onTo(item.Name)">
+              {{item.Name}}
+              <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

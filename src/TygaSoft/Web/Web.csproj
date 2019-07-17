@@ -1,0 +1,1592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93D0FE5B-DC70-417A-A5FD-D8933D4BEF39}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TygaSoft.Web</RootNamespace>
+    <AssemblyName>TygaSoft.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intelligencia.UrlRewriter">
+      <HintPath>..\Libraries\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Select.HtmlToPdf, Version=2.4.0.1, Culture=neutral, PublicKeyToken=e0ae9f6e27a97018, processorArchitecture=MSIL">
+      <HintPath>..\packages\Select.HtmlToPdf.2.4.0.1\lib\net40\Select.HtmlToPdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Base\AddCategory.aspx" />
+    <Content Include="Admin\Base\AddStockWarning.aspx" />
+    <Content Include="Admin\Base\AddStockLocation.aspx" />
+    <Content Include="Admin\Base\AddSupplier.aspx" />
+    <Content Include="Admin\Base\AddProduct.aspx" />
+    <Content Include="Admin\Base\AddVehicle.aspx" />
+    <Content Include="Admin\Base\AddZone.aspx" />
+    <Content Include="Admin\Base\AddCustomer.aspx" />
+    <Content Include="Admin\Base\AddPackage.aspx" />
+    <Content Include="Admin\Base\DlgCustomer.aspx" />
+    <Content Include="Admin\Base\ListCategory.aspx" />
+    <Content Include="Admin\Base\ListStockWarning.aspx" />
+    <Content Include="Admin\Base\ListVehicle.aspx" />
+    <Content Include="Admin\Base\ListPackage.aspx" />
+    <Content Include="Admin\Base\TabPackage.aspx" />
+    <Content Include="Admin\Cost\ListCost.aspx" />
+    <Content Include="Admin\Device\ListDeviceMap.aspx" />
+    <Content Include="Admin\InStore\AddOrderReceiptProduct.aspx" />
+    <Content Include="Admin\InStore\AddShelfMission.aspx" />
+    <Content Include="Admin\InStore\EditOrderReceiptProduct.aspx" />
+    <Content Include="Admin\InStore\EditShelfMissionProduct.aspx" />
+    <Content Include="Admin\InStore\ListOrderReceiptProduct.aspx" />
+    <Content Include="Admin\InStore\ListOrderReceipt.aspx" />
+    <Content Include="Admin\InStore\ListShelfMission.aspx" />
+    <Content Include="Admin\OutStore\AddOrderSend.aspx" />
+    <Content Include="Admin\OutStore\ListOrderPicked.aspx" />
+    <Content Include="Admin\OutStore\ListOrderPickProduct.aspx" />
+    <Content Include="Admin\OutStore\ListOrderSend.aspx" />
+    <Content Include="Admin\OutStore\EditOrderPickProduct.aspx" />
+    <Content Include="Admin\OutStore\EditOrderSendProduct.aspx" />
+    <Content Include="Admin\Pandian\EditPandianProduct.aspx" />
+    <Content Include="Admin\Pandian\ListPandian.aspx" />
+    <Content Include="Admin\Print\BarcodeCtr.aspx" />
+    <Content Include="Admin\Print\InStockDemandOrder.aspx" />
+    <Content Include="Admin\Store\ListStockProduct.aspx" />
+    <Content Include="App_Data\UrlRewriter.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Files\Zxing\Barcode\123456789.jpg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\asset_1.png" />
+    <Content Include="Images\asset_2.png" />
+    <Content Include="Images\img_map.png" />
+    <Content Include="Images\loginl.jpg" />
+    <Content Include="Images\nopic.gif" />
+    <Content Include="Images\pda.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Manages\Gzxy\AddDeviceBorrowRecord.aspx" />
+    <Content Include="Manages\Gzxy\ListDeviceBorrowRecord.aspx" />
+    <Content Include="Manages\Gzxy\ViewDeviceBorrowRecord.aspx" />
+    <Content Include="Manages\Sys\AddSiteMulti.aspx" />
+    <Content Include="Manages\Sys\ListSiteMulti.aspx" />
+    <Content Include="MyTest\BarcodeCtr.aspx" />
+    <Content Include="MyTest\MyBarcodeCtr.aspx" />
+    <Content Include="MyTest\MyTest.aspx" />
+    <Content Include="MyTest\PrintTest.aspx" />
+    <Content Include="MyTest\WebForm1.aspx" />
+    <Content Include="Scripts\Admin\Base\AddStockLocation.js" />
+    <Content Include="Scripts\Admin\Base\AddStockWarning.js" />
+    <Content Include="Scripts\Admin\Base\AddSupplier.js" />
+    <Content Include="Scripts\Admin\Base\AddProduct.js" />
+    <Content Include="Scripts\Admin\Base\AddZone.js" />
+    <Content Include="Scripts\Admin\Base\AddCustomer.js" />
+    <Content Include="Scripts\Admin\Base\AddPackage.js" />
+    <Content Include="Scripts\Admin\Base\DlgPackage.js" />
+    <Content Include="Scripts\Admin\Base\DlgProduct.js" />
+    <Content Include="Scripts\Admin\Base\ListCategory.js" />
+    <Content Include="Scripts\Admin\Base\ListStockWarning.js" />
+    <Content Include="Scripts\Admin\Base\ListProduct.js" />
+    <Content Include="Scripts\Admin\Base\ListPackage.js" />
+    <Content Include="Scripts\Admin\Base\TabPackage.js" />
+    <Content Include="Scripts\Admin\Cost\ListCost.js" />
+    <Content Include="Scripts\Admin\Default.js" />
+    <Content Include="Scripts\Admin\InStore\AddOrderReceiptRecord.js" />
+    <Content Include="Scripts\Admin\InStore\AddOrderReceiptProduct.js" />
+    <Content Include="Scripts\Admin\InStore\AddShelfMission.js" />
+    <Content Include="Scripts\Admin\InStore\DlgOrderProduct.js" />
+    <Content Include="Scripts\Admin\InStore\ListOrderReceipt.js" />
+    <Content Include="Scripts\Admin\InStore\ListOrderReceiptProduct.js" />
+    <Content Include="Scripts\Admin\InStore\ListShelfMission.js" />
+    <Content Include="Scripts\Admin\InStore\ListShelfMissionProduct.js" />
+    <Content Include="Scripts\Admin\InStore\ListTakeOrder.js" />
+    <Content Include="Scripts\Admin\Print\InStockDemandOrder.js" />
+    <Content Include="Scripts\DlgFiles.js" />
+    <Content Include="Scripts\Manages\Gzxy\DeviceBorrowRecord.js" />
+    <Content Include="Scripts\Manages\Sys\SiteMulti.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\easyloader.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\jquery.easyui.min.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\jquery.easyui.mobile.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\jquery.min.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\locale\easyui-lang-en.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\locale\easyui-lang-zh_CN.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\locale\easyui-lang-zh_TW.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.accordion.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.calendar.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.combo.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.combobox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.combogrid.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.combotree.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.combotreegrid.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.datagrid.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.datalist.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.datebox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.datetimebox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.datetimespinner.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.dialog.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.draggable.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.droppable.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.filebox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.form.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.layout.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.linkbutton.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.menu.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.menubutton.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.messager.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.mobile.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.numberbox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.numberspinner.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.pagination.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.panel.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.parser.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.passwordbox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.progressbar.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.propertygrid.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.resizable.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.searchbox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.slider.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.spinner.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.splitbutton.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.switchbutton.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.tabs.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.textbox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.timespinner.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.tooltip.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.tree.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.treegrid.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.validatebox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\plugins\jquery.window.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\easyloader.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.accordion.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.calendar.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.combobox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.datebox.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.draggable.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.droppable.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.form.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.linkbutton.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.menu.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.parser.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.progressbar.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.propertygrid.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.resizable.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.slider.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.tabs.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\src\jquery.window.js" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\accordion.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\calendar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\combo.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\combobox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\datagrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\datalist.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\datebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\dialog.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\easyui.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\filebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\accordion_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\blank.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\calendar_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\combo_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\datagrid_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\datebox_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\layout_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\linkbutton_bg.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\loading.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\menu_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\messager_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\pagination_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\panel_tools.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\passwordbox_close.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\passwordbox_open.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\searchbox_button.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\slider_handle.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\spinner_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\tabs_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\tree_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\images\validatebox_warning.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\layout.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\linkbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\menu.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\menubutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\messager.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\numberbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\pagination.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\panel.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\passwordbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\progressbar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\propertygrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\searchbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\slider.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\spinner.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\splitbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\switchbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\tabs.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\textbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\tooltip.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\tree.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\validatebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\black\window.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\accordion.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\calendar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\combo.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\combobox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\datagrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\datalist.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\datebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\dialog.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\easyui.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\filebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\blank.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\loading.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\passwordbox_close.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\passwordbox_open.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\layout.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\linkbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\menu.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\menubutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\messager.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\numberbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\pagination.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\panel.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\passwordbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\progressbar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\propertygrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\searchbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\slider.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\spinner.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\splitbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\switchbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\tabs.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\textbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\tooltip.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\tree.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\validatebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\bootstrap\window.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\color.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\accordion.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\calendar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\combo.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\combobox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\datagrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\datalist.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\datebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\dialog.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\easyui.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\filebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\accordion_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\blank.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\calendar_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\combo_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\datagrid_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\datebox_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\layout_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\linkbutton_bg.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\loading.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\menu_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\messager_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\pagination_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\panel_tools.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\passwordbox_close.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\passwordbox_open.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\searchbox_button.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\slider_handle.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\spinner_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\tabs_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\tree_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\images\validatebox_warning.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\layout.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\linkbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\menu.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\menubutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\messager.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\numberbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\pagination.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\panel.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\passwordbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\progressbar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\propertygrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\searchbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\slider.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\spinner.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\splitbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\switchbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\tabs.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\textbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\tooltip.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\tree.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\validatebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\default\window.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\accordion.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\calendar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\combo.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\combobox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\datagrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\datalist.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\datebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\dialog.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\easyui.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\filebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\accordion_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\blank.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\calendar_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\combo_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\datagrid_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\datebox_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\layout_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\loading.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\menu_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\messager_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\pagination_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\panel_tools.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\passwordbox_close.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\passwordbox_open.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\searchbox_button.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\slider_handle.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\spinner_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\tabs_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\tree_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\images\validatebox_warning.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\layout.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\linkbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\menu.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\menubutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\messager.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\numberbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\pagination.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\panel.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\passwordbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\progressbar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\propertygrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\searchbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\slider.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\spinner.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\splitbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\switchbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\tabs.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\textbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\tooltip.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\tree.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\validatebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\gray\window.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icon.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\back.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\blank.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\cancel.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\clear.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\cut.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\edit_add.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\edit_remove.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\filesave.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\filter.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\help.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\large_chart.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\large_clipart.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\large_picture.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\large_shapes.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\large_smartart.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\lock.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\man.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\mini_add.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\mini_edit.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\mini_refresh.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\more.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\no.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\ok.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\pencil.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\print.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\redo.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\reload.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\search.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\sum.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\tip.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\icons\undo.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\accordion.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\calendar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\combo.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\combobox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\datagrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\datalist.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\datebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\dialog.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\easyui.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\filebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\accordion_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\blank.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\calendar_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\combo_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\datagrid_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\datebox_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\layout_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\linkbutton_bg.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\loading.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\menu_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\messager_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\pagination_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\panel_tools.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\passwordbox_close.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\passwordbox_open.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\searchbox_button.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\slider_handle.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\spinner_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\tabs_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\tree_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\images\validatebox_warning.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\layout.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\linkbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\menu.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\menubutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\messager.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\numberbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\pagination.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\panel.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\passwordbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\progressbar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\propertygrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\searchbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\slider.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\spinner.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\splitbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\switchbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\tabs.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\textbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\tooltip.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\tree.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\validatebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\material\window.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\accordion.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\calendar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\combo.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\combobox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\datagrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\datalist.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\datebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\dialog.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\easyui.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\filebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\accordion_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\blank.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\calendar_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\combo_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\datagrid_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\datebox_arrow.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\layout_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\loading.gif" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\menu_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\messager_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\pagination_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\panel_tools.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\passwordbox_close.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\passwordbox_open.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\searchbox_button.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\slider_handle.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\spinner_arrows.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\tabs_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\tree_icons.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\images\validatebox_warning.png" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\layout.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\linkbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\menu.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\menubutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\messager.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\numberbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\pagination.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\panel.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\passwordbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\progressbar.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\propertygrid.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\searchbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\slider.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\spinner.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\splitbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\switchbutton.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\tabs.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\textbox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\tooltip.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\tree.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\validatebox.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\metro\window.css" />
+    <Content Include="Scripts\Plugins\Jeasyui15\themes\mobile.css" />
+    <Content Include="Scripts\String.js" />
+    <Content Include="Scripts\Manages\AddCompany.js" />
+    <Content Include="Scripts\Manages\AddLogisticsDistribution.js" />
+    <Content Include="Scripts\Manages\AddOrderPicked.js" />
+    <Content Include="Scripts\Manages\AddOrderReceipt.js" />
+    <Content Include="Scripts\Manages\AddOrderSend.js" />
+    <Content Include="Scripts\Manages\AddPandian.js" />
+    <Content Include="Scripts\Manages\AddVehicle.js" />
+    <Content Include="Scripts\Manages\BarcodeCtr.js" />
+    <Content Include="Scripts\Manages\Base\ListCustomer.js" />
+    <Content Include="Scripts\Manages\Base\ListStockLocation.js" />
+    <Content Include="Scripts\Manages\Base\ListSupplier.js" />
+    <Content Include="Scripts\Manages\Base\ListZone.js" />
+    <Content Include="Scripts\Manages\DlgCompany.js" />
+    <Content Include="Scripts\Manages\DlgBarcodeTemplate.js" />
+    <Content Include="Scripts\Manages\DlgCustomer.js" />
+    <Content Include="Scripts\Manages\DlgOrder.js" />
+    <Content Include="Scripts\Manages\DlgProduct.js" />
+    <Content Include="Scripts\Manages\DlgStockLocationProduct.js" />
+    <Content Include="Scripts\Manages\DlgStockLocation.js" />
+    <Content Include="Scripts\Manages\DlgUsers.js" />
+    <Content Include="Scripts\Manages\DlgVehicle.js" />
+    <Content Include="Scripts\Manages\DlgZone.js" />
+    <Content Include="Scripts\Manages\Gzxy\AddCustomer.js" />
+    <Content Include="Scripts\Manages\Gzxy\AddProjectReportPrepare.js" />
+    <Content Include="Scripts\Manages\Gzxy\DlgCustomer.js" />
+    <Content Include="Scripts\Manages\Gzxy\ListCustomer.js" />
+    <Content Include="Scripts\Manages\Gzxy\ListProjectReportPrepare.js" />
+    <Content Include="Scripts\Manages\ListCompany.js" />
+    <Content Include="Scripts\Manages\ListLogisticsDistribution.js" />
+    <Content Include="Scripts\Manages\ListOrderPicked.js" />
+    <Content Include="Scripts\Manages\ListOrderReceiptProduct.js" />
+    <Content Include="Scripts\Manages\ListOrderSend.js" />
+    <Content Include="Scripts\Admin\Store\ListStockProduct.js" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\DlgUpload.js" />
+    <Content Include="Scripts\Plugins\datagrid-cellediting.js" />
+    <Content Include="Scripts\JeasyuiExtend.js" />
+    <Content Include="Scripts\JeasyuiHelper.js" />
+    <Content Include="Scripts\Login.js" />
+    <Content Include="Scripts\Menus.js" />
+    <Content Include="Scripts\Plugins\HighCharts\highcharts-3d.js" />
+    <Content Include="Scripts\Plugins\HighCharts\highcharts.js" />
+    <Content Include="Scripts\Plugins\jquery.PrintArea.js" />
+    <Content Include="Scripts\Plugins\Jquery\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\Shares\Default.js" />
+    <Content Include="Scripts\Manages\Gzxy\AddDeviceRepairRecord.js" />
+    <Content Include="Scripts\Manages\Gzxy\ListDeviceRepairRecord.js" />
+    <Content Include="Scripts\Manages\Default.js" />
+    <Content Include="Scripts\Manages\ListOrderPickProduct.js" />
+    <Content Include="Scripts\Manages\ListOrderSendProduct.js" />
+    <Content Include="Scripts\Manages\ListPandian.js" />
+    <Content Include="Scripts\Manages\ListPandianProduct.js" />
+    <Content Include="Scripts\Manages\ListRFID.js" />
+    <Content Include="Scripts\Manages\ListVehicle.js" />
+    <Content Include="Scripts\Manages\Maps\MapLogisticsDistribution.js" />
+    <Content Include="Scripts\Manages\Members\ListUser.js" />
+    <Content Include="Scripts\Manages\Mes\EditMesCategory.js" />
+    <Content Include="Scripts\Manages\Mes\ListMesOrder.js" />
+    <Content Include="Scripts\Manages\Notice\Wechat.js" />
+    <Content Include="Scripts\Manages\Print.js" />
+    <Content Include="Scripts\Manages\PrintBarcodeTemplate.js" />
+    <Content Include="Scripts\Manages\PrintProjectPrepare.js" />
+    <Content Include="Scripts\Manages\SysApp.js" />
+    <Content Include="Scripts\Manages\Sys\ListMenus.js" />
+    <Content Include="Scripts\Manages\Sys\ListRoleMenu.js" />
+    <Content Include="Scripts\Manages\UCMenu.js" />
+    <Content Include="Services\PdaService.svc" />
+    <Content Include="Services\SecurityService.svc" />
+    <Content Include="Services\WmsService.svc" />
+    <Content Include="Shares\Default.aspx" />
+    <Content Include="Shares\Versions\AppVersion.aspx" />
+    <Content Include="Styles\Images\atob.jpg" />
+    <Content Include="Styles\Print.css" />
+    <Content Include="Manages\AddCompany.aspx" />
+    <Content Include="Manages\Base\ListCustomer.aspx" />
+    <Content Include="Manages\Base\ListStockLocation.aspx" />
+    <Content Include="Manages\Base\ListSupplier.aspx" />
+    <Content Include="Manages\Base\ListZone.aspx" />
+    <Content Include="Manages\DlgBarcodeTemplate.aspx" />
+    <Content Include="Manages\DlgPictureSelect.aspx" />
+    <Content Include="Manages\DlgPictureUpload.aspx" />
+    <Content Include="Manages\DlgProduct.aspx" />
+    <Content Include="Manages\DlgStockLocationProduct.aspx" />
+    <Content Include="Manages\DlgUpload.aspx" />
+    <Content Include="Manages\EditLogisticsDistributionProduct.aspx" />
+    <Content Include="Manages\Gzxy\AddCustomer.aspx" />
+    <Content Include="Manages\Gzxy\AddDeviceRepairRecord.aspx" />
+    <Content Include="Manages\Gzxy\AddProjectReportPrepare.aspx" />
+    <Content Include="Manages\Gzxy\EditProjectReportPrepare.aspx" />
+    <Content Include="Manages\Gzxy\ListDeviceRepairRecord.aspx" />
+    <Content Include="Styles\Admin.css" />
+    <Content Include="Styles\Images\bg_lightgreen.png" />
+    <Content Include="Styles\Images\icon.png" />
+    <Content Include="Styles\Images\loading.gif" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\Main.css" />
+    <Content Include="Styles\ui-v1.0.1.css" />
+    <Content Include="Styles\Users.css" />
+    <Content Include="Templates\Admin\DlgZone.html" />
+    <Content Include="Templates\Admin\DlgCustomer.html" />
+    <Content Include="Templates\Admin\DlgPackage.html" />
+    <Content Include="Templates\Admin\DlgProduct.html" />
+    <Content Include="Manages\Default.aspx" />
+    <Content Include="Manages\JsPictureSelect.txt" />
+    <Content Include="Manages\JsPictureUpload.txt" />
+    <Content Include="Manages\JsUpload.txt" />
+    <Content Include="Manages\ListCompany.aspx" />
+    <Content Include="Manages\ListLogisticsDistribution.aspx" />
+    <Content Include="Manages\ListRFID.aspx" />
+    <Content Include="Manages\Maps\MapLogisticsDistribution.aspx" />
+    <Content Include="Manages\Members\AddRole.aspx" />
+    <Content Include="Manages\Members\AddRoleUser.aspx" />
+    <Content Include="Manages\Members\AddUser.aspx" />
+    <Content Include="Manages\Members\AddUserProfile.aspx" />
+    <Content Include="Manages\Members\AddUserRole.aspx" />
+    <Content Include="Manages\Members\ListRoles.aspx" />
+    <Content Include="Manages\Members\ListUsers.aspx" />
+    <Content Include="Manages\Members\UpdatePsw.aspx" />
+    <Content Include="Manages\Mes\ListMesCategory.aspx" />
+    <Content Include="Manages\Mes\ListMesOrder.aspx" />
+    <Content Include="Manages\Print.aspx" />
+    <Content Include="Manages\PrintBarcodeTemplate.aspx" />
+    <Content Include="Manages\PrintProjectPrepare.aspx" />
+    <Content Include="Manages\Sys\AddMenus.aspx" />
+    <Content Include="Manages\Sys\AddRegion.aspx" />
+    <Content Include="Manages\Sys\DlgUsers.aspx" />
+    <Content Include="Manages\Sys\ListMenus.aspx" />
+    <Content Include="Manages\Sys\ListRegion.aspx" />
+    <Content Include="Manages\Sys\ListRoleMenu.aspx" />
+    <Content Include="Manages\UserCenter.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebUserControls\UCAddOrderReceipt.ascx" />
+    <Content Include="WebUserControls\UCAddPreOrderReceipt.ascx" />
+    <Content Include="WebUserControls\UCMenu.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Base\AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\AddStockWarning.aspx.cs">
+      <DependentUpon>AddStockWarning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddStockWarning.aspx.designer.cs">
+      <DependentUpon>AddStockWarning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\AddStockLocation.aspx.cs">
+      <DependentUpon>AddStockLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddStockLocation.aspx.designer.cs">
+      <DependentUpon>AddStockLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\AddSupplier.aspx.cs">
+      <DependentUpon>AddSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddSupplier.aspx.designer.cs">
+      <DependentUpon>AddSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\AddVehicle.aspx.cs">
+      <DependentUpon>AddVehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddVehicle.aspx.designer.cs">
+      <DependentUpon>AddVehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\AddZone.aspx.cs">
+      <DependentUpon>AddZone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddZone.aspx.designer.cs">
+      <DependentUpon>AddZone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\AddCustomer.aspx.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddCustomer.aspx.designer.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\AddPackage.aspx.cs">
+      <DependentUpon>AddPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\AddPackage.aspx.designer.cs">
+      <DependentUpon>AddPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\DlgCustomer.aspx.cs">
+      <DependentUpon>DlgCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\DlgCustomer.aspx.designer.cs">
+      <DependentUpon>DlgCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\ListCategory.aspx.cs">
+      <DependentUpon>ListCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\ListCategory.aspx.designer.cs">
+      <DependentUpon>ListCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\ListStockWarning.aspx.cs">
+      <DependentUpon>ListStockWarning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\ListStockWarning.aspx.designer.cs">
+      <DependentUpon>ListStockWarning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\ListVehicle.aspx.cs">
+      <DependentUpon>ListVehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\ListVehicle.aspx.designer.cs">
+      <DependentUpon>ListVehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\ListPackage.aspx.cs">
+      <DependentUpon>ListPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\ListPackage.aspx.designer.cs">
+      <DependentUpon>ListPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Base\TabPackage.aspx.cs">
+      <DependentUpon>TabPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Base\TabPackage.aspx.designer.cs">
+      <DependentUpon>TabPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Cost\ListCost.aspx.cs">
+      <DependentUpon>ListCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Cost\ListCost.aspx.designer.cs">
+      <DependentUpon>ListCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Device\ListDeviceMap.aspx.cs">
+      <DependentUpon>ListDeviceMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Device\ListDeviceMap.aspx.designer.cs">
+      <DependentUpon>ListDeviceMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InStore\AddOrderReceiptProduct.aspx.cs">
+      <DependentUpon>AddOrderReceiptProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InStore\AddOrderReceiptProduct.aspx.designer.cs">
+      <DependentUpon>AddOrderReceiptProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InStore\AddShelfMission.aspx.cs">
+      <DependentUpon>AddShelfMission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InStore\AddShelfMission.aspx.designer.cs">
+      <DependentUpon>AddShelfMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InStore\EditOrderReceiptProduct.aspx.cs">
+      <DependentUpon>EditOrderReceiptProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InStore\EditOrderReceiptProduct.aspx.designer.cs">
+      <DependentUpon>EditOrderReceiptProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InStore\EditShelfMissionProduct.aspx.cs">
+      <DependentUpon>EditShelfMissionProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InStore\EditShelfMissionProduct.aspx.designer.cs">
+      <DependentUpon>EditShelfMissionProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InStore\ListOrderReceiptProduct.aspx.cs">
+      <DependentUpon>ListOrderReceiptProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InStore\ListOrderReceiptProduct.aspx.designer.cs">
+      <DependentUpon>ListOrderReceiptProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InStore\ListOrderReceipt.aspx.cs">
+      <DependentUpon>ListOrderReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InStore\ListOrderReceipt.aspx.designer.cs">
+      <DependentUpon>ListOrderReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InStore\ListShelfMission.aspx.cs">
+      <DependentUpon>ListShelfMission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InStore\ListShelfMission.aspx.designer.cs">
+      <DependentUpon>ListShelfMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OutStore\AddOrderSend.aspx.cs">
+      <DependentUpon>AddOrderSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OutStore\AddOrderSend.aspx.designer.cs">
+      <DependentUpon>AddOrderSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OutStore\ListOrderPicked.aspx.cs">
+      <DependentUpon>ListOrderPicked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OutStore\ListOrderPicked.aspx.designer.cs">
+      <DependentUpon>ListOrderPicked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OutStore\ListOrderPickProduct.aspx.cs">
+      <DependentUpon>ListOrderPickProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OutStore\ListOrderPickProduct.aspx.designer.cs">
+      <DependentUpon>ListOrderPickProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OutStore\ListOrderSend.aspx.cs">
+      <DependentUpon>ListOrderSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OutStore\ListOrderSend.aspx.designer.cs">
+      <DependentUpon>ListOrderSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OutStore\EditOrderPickProduct.aspx.cs">
+      <DependentUpon>EditOrderPickProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OutStore\EditOrderPickProduct.aspx.designer.cs">
+      <DependentUpon>EditOrderPickProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OutStore\EditOrderSendProduct.aspx.cs">
+      <DependentUpon>EditOrderSendProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OutStore\EditOrderSendProduct.aspx.designer.cs">
+      <DependentUpon>EditOrderSendProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pandian\EditPandianProduct.aspx.cs">
+      <DependentUpon>EditPandianProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pandian\EditPandianProduct.aspx.designer.cs">
+      <DependentUpon>EditPandianProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pandian\ListPandian.aspx.cs">
+      <DependentUpon>ListPandian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pandian\ListPandian.aspx.designer.cs">
+      <DependentUpon>ListPandian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Print\BarcodeCtr.aspx.cs">
+      <DependentUpon>BarcodeCtr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Print\BarcodeCtr.aspx.designer.cs">
+      <DependentUpon>BarcodeCtr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Print\InStockDemandOrder.aspx.cs">
+      <DependentUpon>InStockDemandOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Print\InStockDemandOrder.aspx.designer.cs">
+      <DependentUpon>InStockDemandOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Store\ListStockProduct.aspx.cs">
+      <DependentUpon>ListStockProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Store\ListStockProduct.aspx.designer.cs">
+      <DependentUpon>ListStockProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\HandlerContent.ashx.cs">
+      <DependentUpon>HandlerContent.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\HandlerFile.ashx.cs">
+      <DependentUpon>HandlerFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\HandlerMap.ashx.cs">
+      <DependentUpon>HandlerMap.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\HandlerUpload.ashx.cs">
+      <DependentUpon>HandlerUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\HandlerUsers.ashx.cs">
+      <DependentUpon>HandlerUsers.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\ValidateCode.ashx.cs">
+      <DependentUpon>ValidateCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Gzxy\AddDeviceBorrowRecord.aspx.cs">
+      <DependentUpon>AddDeviceBorrowRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Gzxy\AddDeviceBorrowRecord.aspx.designer.cs">
+      <DependentUpon>AddDeviceBorrowRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Gzxy\ListDeviceBorrowRecord.aspx.cs">
+      <DependentUpon>ListDeviceBorrowRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Gzxy\ListDeviceBorrowRecord.aspx.designer.cs">
+      <DependentUpon>ListDeviceBorrowRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Gzxy\ViewDeviceBorrowRecord.aspx.cs">
+      <DependentUpon>ViewDeviceBorrowRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Gzxy\ViewDeviceBorrowRecord.aspx.designer.cs">
+      <DependentUpon>ViewDeviceBorrowRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Sys\AddSiteMulti.aspx.cs">
+      <DependentUpon>AddSiteMulti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Sys\AddSiteMulti.aspx.designer.cs">
+      <DependentUpon>AddSiteMulti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Sys\ListSiteMulti.aspx.cs">
+      <DependentUpon>ListSiteMulti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Sys\ListSiteMulti.aspx.designer.cs">
+      <DependentUpon>ListSiteMulti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Blank.Master.cs">
+      <DependentUpon>Blank.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Blank.Master.designer.cs">
+      <DependentUpon>Blank.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Manages.Master.cs">
+      <DependentUpon>Manages.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Manages.Master.designer.cs">
+      <DependentUpon>Manages.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Shares.Master.cs">
+      <DependentUpon>Shares.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Shares.Master.designer.cs">
+      <DependentUpon>Shares.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MyTest\BarcodeCtr.aspx.cs">
+      <DependentUpon>BarcodeCtr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTest\BarcodeCtr.aspx.designer.cs">
+      <DependentUpon>BarcodeCtr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTest\MyBarcodeCtr.aspx.cs">
+      <DependentUpon>MyBarcodeCtr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTest\MyBarcodeCtr.aspx.designer.cs">
+      <DependentUpon>MyBarcodeCtr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTest\MyTest.aspx.cs">
+      <DependentUpon>MyTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTest\MyTest.aspx.designer.cs">
+      <DependentUpon>MyTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTest\PrintTest.aspx.cs">
+      <DependentUpon>PrintTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTest\PrintTest.aspx.designer.cs">
+      <DependentUpon>PrintTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTest\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTest\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shares\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shares\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Base\ListCustomer.aspx.cs">
+      <DependentUpon>ListCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Base\ListCustomer.aspx.designer.cs">
+      <DependentUpon>ListCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Base\ListStockLocation.aspx.cs">
+      <DependentUpon>ListStockLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Base\ListStockLocation.aspx.designer.cs">
+      <DependentUpon>ListStockLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Base\ListSupplier.aspx.cs">
+      <DependentUpon>ListSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Base\ListSupplier.aspx.designer.cs">
+      <DependentUpon>ListSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Base\ListZone.aspx.cs">
+      <DependentUpon>ListZone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Base\ListZone.aspx.designer.cs">
+      <DependentUpon>ListZone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\DlgBarcodeTemplate.aspx.cs">
+      <DependentUpon>DlgBarcodeTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\DlgBarcodeTemplate.aspx.designer.cs">
+      <DependentUpon>DlgBarcodeTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\DlgPictureSelect.aspx.cs">
+      <DependentUpon>DlgPictureSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\DlgPictureSelect.aspx.designer.cs">
+      <DependentUpon>DlgPictureSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\DlgPictureUpload.aspx.cs">
+      <DependentUpon>DlgPictureUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\DlgPictureUpload.aspx.designer.cs">
+      <DependentUpon>DlgPictureUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\DlgProduct.aspx.cs">
+      <DependentUpon>DlgProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\DlgProduct.aspx.designer.cs">
+      <DependentUpon>DlgProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\DlgStockLocationProduct.aspx.cs">
+      <DependentUpon>DlgStockLocationProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\DlgStockLocationProduct.aspx.designer.cs">
+      <DependentUpon>DlgStockLocationProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\DlgUpload.aspx.cs">
+      <DependentUpon>DlgUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\DlgUpload.aspx.designer.cs">
+      <DependentUpon>DlgUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\EditLogisticsDistributionProduct.aspx.cs">
+      <DependentUpon>EditLogisticsDistributionProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\EditLogisticsDistributionProduct.aspx.designer.cs">
+      <DependentUpon>EditLogisticsDistributionProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Gzxy\AddCustomer.aspx.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Gzxy\AddCustomer.aspx.designer.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Gzxy\AddDeviceRepairRecord.aspx.cs">
+      <DependentUpon>AddDeviceRepairRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Gzxy\AddDeviceRepairRecord.aspx.designer.cs">
+      <DependentUpon>AddDeviceRepairRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Gzxy\AddProjectReportPrepare.aspx.cs">
+      <DependentUpon>AddProjectReportPrepare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Gzxy\AddProjectReportPrepare.aspx.designer.cs">
+      <DependentUpon>AddProjectReportPrepare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Gzxy\EditProjectReportPrepare.aspx.cs">
+      <DependentUpon>EditProjectReportPrepare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Gzxy\EditProjectReportPrepare.aspx.designer.cs">
+      <DependentUpon>EditProjectReportPrepare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Gzxy\ListDeviceRepairRecord.aspx.cs">
+      <DependentUpon>ListDeviceRepairRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Gzxy\ListDeviceRepairRecord.aspx.designer.cs">
+      <DependentUpon>ListDeviceRepairRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shares\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shares\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\ListCompany.aspx.cs">
+      <DependentUpon>ListCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\ListCompany.aspx.designer.cs">
+      <DependentUpon>ListCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\ListLogisticsDistribution.aspx.cs">
+      <DependentUpon>ListLogisticsDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\ListLogisticsDistribution.aspx.designer.cs">
+      <DependentUpon>ListLogisticsDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\ListRFID.aspx.cs">
+      <DependentUpon>ListRFID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\ListRFID.aspx.designer.cs">
+      <DependentUpon>ListRFID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Maps\MapLogisticsDistribution.aspx.cs">
+      <DependentUpon>MapLogisticsDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Maps\MapLogisticsDistribution.aspx.designer.cs">
+      <DependentUpon>MapLogisticsDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Members\AddRole.aspx.cs">
+      <DependentUpon>AddRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Members\AddRole.aspx.designer.cs">
+      <DependentUpon>AddRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Members\AddRoleUser.aspx.cs">
+      <DependentUpon>AddRoleUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Members\AddRoleUser.aspx.designer.cs">
+      <DependentUpon>AddRoleUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Members\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Members\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Members\AddUserProfile.aspx.cs">
+      <DependentUpon>AddUserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Members\AddUserProfile.aspx.designer.cs">
+      <DependentUpon>AddUserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Members\AddUserRole.aspx.cs">
+      <DependentUpon>AddUserRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Members\AddUserRole.aspx.designer.cs">
+      <DependentUpon>AddUserRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Members\ListRoles.aspx.cs">
+      <DependentUpon>ListRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Members\ListRoles.aspx.designer.cs">
+      <DependentUpon>ListRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Members\ListUsers.aspx.cs">
+      <DependentUpon>ListUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Members\ListUsers.aspx.designer.cs">
+      <DependentUpon>ListUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Members\UpdatePsw.aspx.cs">
+      <DependentUpon>UpdatePsw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Members\UpdatePsw.aspx.designer.cs">
+      <DependentUpon>UpdatePsw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Mes\ListMesCategory.aspx.cs">
+      <DependentUpon>ListMesCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Mes\ListMesCategory.aspx.designer.cs">
+      <DependentUpon>ListMesCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Mes\ListMesOrder.aspx.cs">
+      <DependentUpon>ListMesOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Mes\ListMesOrder.aspx.designer.cs">
+      <DependentUpon>ListMesOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Print.aspx.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Print.aspx.designer.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\PrintBarcodeTemplate.aspx.cs">
+      <DependentUpon>PrintBarcodeTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\PrintBarcodeTemplate.aspx.designer.cs">
+      <DependentUpon>PrintBarcodeTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\PrintProjectPrepare.aspx.cs">
+      <DependentUpon>PrintProjectPrepare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\PrintProjectPrepare.aspx.designer.cs">
+      <DependentUpon>PrintProjectPrepare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Sys\AddMenus.aspx.cs">
+      <DependentUpon>AddMenus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Sys\AddMenus.aspx.designer.cs">
+      <DependentUpon>AddMenus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Sys\AddRegion.aspx.cs">
+      <DependentUpon>AddRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Sys\AddRegion.aspx.designer.cs">
+      <DependentUpon>AddRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Sys\DlgUsers.aspx.cs">
+      <DependentUpon>DlgUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Sys\DlgUsers.aspx.designer.cs">
+      <DependentUpon>DlgUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Sys\ListMenus.aspx.cs">
+      <DependentUpon>ListMenus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Sys\ListMenus.aspx.designer.cs">
+      <DependentUpon>ListMenus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Sys\ListRegion.aspx.cs">
+      <DependentUpon>ListRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Sys\ListRegion.aspx.designer.cs">
+      <DependentUpon>ListRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Sys\ListRoleMenu.aspx.cs">
+      <DependentUpon>ListRoleMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Sys\ListRoleMenu.aspx.designer.cs">
+      <DependentUpon>ListRoleMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\UserCenter.aspx.cs">
+      <DependentUpon>UserCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\UserCenter.aspx.designer.cs">
+      <DependentUpon>UserCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shares\Versions\AppVersion.aspx.cs">
+      <DependentUpon>AppVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shares\Versions\AppVersion.aspx.designer.cs">
+      <DependentUpon>AppVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControls\UCAddOrderReceipt.ascx.cs">
+      <DependentUpon>UCAddOrderReceipt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControls\UCAddOrderReceipt.ascx.designer.cs">
+      <DependentUpon>UCAddOrderReceipt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControls\UCAddPreOrderReceipt.ascx.cs">
+      <DependentUpon>UCAddPreOrderReceipt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControls\UCAddPreOrderReceipt.ascx.designer.cs">
+      <DependentUpon>UCAddPreOrderReceipt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControls\UCMenu.ascx.cs">
+      <DependentUpon>UCMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControls\UCMenu.ascx.designer.cs">
+      <DependentUpon>UCMenu.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Handlers\ValidateCode.ashx" />
+    <Content Include="Handlers\HandlerUpload.ashx" />
+    <Content Include="Files\Template\维修设备记录导入模板.xlsx" />
+    <Content Include="Log4net.config" />
+    <Content Include="Handlers\HandlerFile.ashx" />
+    <Content Include="Masters\Blank.Master" />
+    <Content Include="Handlers\HandlerContent.ashx" />
+    <Content Include="Handlers\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Handlers\HandlerUsers.ashx" />
+    <Content Include="Handlers\HandlerMap.ashx" />
+    <Content Include="Masters\Manages.Master" />
+    <Content Include="Masters\Shares.Master" />
+    <Content Include="Files\Download\wms2saas-release-v001.apk" />
+    <None Include="Properties\PublishProfiles\Wms.Web.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Shares\Site.Master" />
+    <Content Include="Manages\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Services\Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Manages\Notice\" />
+    <Folder Include="Mobile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{43f33597-906d-42ef-905c-5094ab96a7bd}</Project>
+      <Name>BLL %28BLL\BLL%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CacheDependencyFactory\CacheDependencyFactory.csproj">
+      <Project>{581be0b7-4895-4b84-abe7-e64dbed593f9}</Project>
+      <Name>CacheDependencyFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomProvider\CustomProvider.csproj">
+      <Project>{b5326878-a9f6-4572-bc8c-e2608da67654}</Project>
+      <Name>CustomProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{fa2a581b-4e2e-46bd-b510-f7bf76a9a9dd}</Project>
+      <Name>DALFactory %28DALFactory\DALFactory%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{7477d5a7-b2e9-4ca9-ab9d-212b726265aa}</Project>
+      <Name>DBUtility %28DBUtility\DBUtility%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICacheDependency\ICacheDependency.csproj">
+      <Project>{2687e76b-1552-4f96-a12f-2972a340fdac}</Project>
+      <Name>ICacheDependency</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{8d926a63-b689-4bc6-9143-7629e9b54290}</Project>
+      <Name>IDAL %28IDAL\IDAL%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IMessaging\IMessaging.csproj">
+      <Project>{19281519-9852-4b15-9298-63a0bf2cb2c3}</Project>
+      <Name>IMessaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessagingFactory\MessagingFactory.csproj">
+      <Project>{373f402e-8cf9-48c6-b9f1-c2d183f5741d}</Project>
+      <Name>MessagingFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{4af5a8fa-4976-4562-aea5-122d69d75a44}</Project>
+      <Name>Model %28Model\Model%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MsmqMessaging\MsmqMessaging.csproj">
+      <Project>{ad3dee38-f75b-43c3-9e3f-8764d59a66b1}</Project>
+      <Name>MsmqMessaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlServerDAL\SqlServerDAL.csproj">
+      <Project>{7095816d-8bbd-4dc4-b6a7-f565f6783955}</Project>
+      <Name>SqlServerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SysException\SysException.csproj">
+      <Project>{03a24215-254e-4da1-9b5d-7fce88b8ca79}</Project>
+      <Name>SysException</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SysHelper\SysHelper.csproj">
+      <Project>{47a39355-ea40-45ae-8ed1-f2b1ebb416ff}</Project>
+      <Name>SysHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TableCacheDependency\TableCacheDependency.csproj">
+      <Project>{330482a9-cac7-4220-9c72-63fadc336ccf}</Project>
+      <Name>TableCacheDependency</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfService\WcfService.csproj">
+      <Project>{1ba577c0-dee0-47e8-8e20-3246bc81df37}</Project>
+      <Name>WcfService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebHelper\WebHelper.csproj">
+      <Project>{7d3f2986-bde3-486c-b24a-563158635f0e}</Project>
+      <Name>WebHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59050</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59050/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Select.HtmlToPdf.2.4.0.1\build\Select.HtmlToPdf.targets" Condition="Exists('..\packages\Select.HtmlToPdf.2.4.0.1\build\Select.HtmlToPdf.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Select.HtmlToPdf.2.4.0.1\build\Select.HtmlToPdf.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Select.HtmlToPdf.2.4.0.1\build\Select.HtmlToPdf.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

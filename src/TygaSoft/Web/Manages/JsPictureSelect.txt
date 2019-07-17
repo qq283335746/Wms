@@ -1,0 +1,56 @@
+﻿<script type="text/javascript">
+    var {DlgId} = {
+        Init: function () {
+			$("#pictureBox").attr("id","pictureBox_{DlgId}");
+			$("#easyPager").attr("id","easyPager_{DlgId}");
+			$("#dlgPictureFm").removeAttr("action");
+		    $("#dlgPictureFm").attr("id","dlgPictureFm_{DlgId}");
+            this.InitPager();
+            this.InitPicSelect();
+        },
+        InitPager: function () {
+            $('#easyPager_{DlgId}').pagination({
+                total: {TotalRecord},
+                pageNumber: {PageIndex},
+                pageSize: {PageSize},
+                onSelectPage: function (pageNumber, pageSize) {
+                    var url = "{DlgHref}&pageIndex=" + pageNumber + "&pageSize=" + pageSize + "&keyword={Keyword}";
+                    $("#{DlgId}").dialog('refresh', url);
+                }
+            });
+        },
+        InitPicSelect: function () {
+            if ({IsMutilSelect}) {
+                $("#pictureBox_{DlgId}").children().bind("click", function () {
+					if($(this).hasClass("curr")){
+					    $(this).removeClass("curr");
+					}
+					else{
+					    $(this).addClass("curr");
+					}
+                })
+            }
+            else {
+                $("#pictureBox_{DlgId}").children().bind("click", function () {
+                    $(this).addClass("curr").siblings().removeClass("curr");
+                })
+            }
+        },
+        GetPicSelect: function () {
+            var data = new Array();
+            $("#pictureBox_{DlgId}>div").each(function () {
+                if ($(this).hasClass("curr")) {
+                    var img = $(this).find("img");
+                    if ($.trim(img.attr("src")) != "" && $.trim(img.attr("code")) != "") {
+                        data.push(img.attr("code") + "," + img.attr("src"));
+                    }
+                }
+            })
+            return data;
+        }
+    }
+
+    $(function () {
+        {DlgId}.Init();
+    })
+</script>

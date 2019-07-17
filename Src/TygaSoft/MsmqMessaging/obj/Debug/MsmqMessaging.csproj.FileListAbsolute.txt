@@ -1,9 +1,0 @@
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\bin\Debug\TygaSoft.MsmqMessaging.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\bin\Debug\TygaSoft.MsmqMessaging.pdb
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\bin\Debug\TygaSoft.IMessaging.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\bin\Debug\TygaSoft.Model.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\bin\Debug\TygaSoft.IMessaging.pdb
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\bin\Debug\TygaSoft.Model.pdb
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\obj\Debug\ResolveAssemblyReference.cache
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\obj\Debug\TygaSoft.MsmqMessaging.dll
-C:\MyCodeWorkspace\Saas\Wms\源码\TygaSoft\MsmqMessaging\obj\Debug\TygaSoft.MsmqMessaging.pdb

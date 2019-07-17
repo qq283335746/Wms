@@ -1,0 +1,68 @@
+
+/*input 文本框*/
+.ui-input-h30{outline:none;width:308px;padding:5px;line-height:18px;height:18px;font-size:14px;border:1px solid #bbbbbb;color:#555555;background-color:#f5f5f5;border-radius:1px;-moz-border-radius: 1px;-webkit-border-radius: 1px;}
+.ui-input-h32{outline:none;width:308px;padding:5px;line-height:20px;height:20px;font-size:14px;border:1px solid #bbbbbb;color:#555555;background-color:#f5f5f5;border-radius:1px;-moz-border-radius: 1px;-webkit-border-radius: 1px;}
+.ui-input-h40{outline:none;width:308px;padding:5px;line-height:28px;height:28px;font-size:14px;border:1px solid #bbbbbb;color:#555555;background-color:#f5f5f5;border-radius:1px;-moz-border-radius: 1px;-webkit-border-radius: 1px;}
+
+.ui-input-h30[type=text]:focus,.ui-input-h32[type=text]:focus,.ui-input-h40[type=text]:focus,.ui-input-h30[type=password]:focus,.ui-input-h32[type=password]:focus,.ui-input-h40[type=password]:focus{
+  transition:0.5s;border:1px solid #0591aa;box-shadow:0 0 2px #0591aa;background-color:#FFFFFF;
+}
+
+.disabled{border: 1px solid #DDD;background-color: #F5F5F5;color:#ACA899;}
+
+[placeholder] { font-family: 'Microsoft yahei'; }
+::-moz-placeholder {
+   color:#777777;
+}
+::-ms-input-placeholder {
+    color:#777777;
+}
+::-webkit-input-placeholder {
+   color:#777777;
+}
+label.placeholder{position:absolute;left:5px;color:#777777;font-size:14px;}
+
+/*textarea*/
+.ui-textarea{width:318px;padding:5px;font-size:14px;border:1px solid #bbbbbb;color:#555555;background-color:#FFFFFF;border-radius:1px;-moz-border-radius: 1px;-webkit-border-radius: 1px;}
+
+
+/*select*/
+select{width:320px;height:32px;border:1px solid #bbbbbb;color:#555555;padding:5px;background-color:#f5f5f5;}
+select:focus{transition:0.5s;border:1px solid #0591aa;box-shadow:0 0 2px #0591aa;background-color:#FFFFFF;}
+
+
+/*提交框*/
+.ui-submit{padding:0 5px;letter-spacing:3px;display:block;text-align:center;line-height:38px;width:320px;height:38px;border:1px solid #4ca221;background-color:#4ca221;color:#FFFFFF;font-size:19px;border-radius:1px;-moz-border-radius: 1px;-webkit-border-radius: 1px;}
+.ui-submit:hover{background-color:#459c1a;text-decoration:none;}
+.ui-submit.disabled,.ui-submit.disabled:hover{background-color:#818181;border:1px solid #818181;}
+
+/*提交框blue*/
+.ui-submit-blue{padding:0 5px;letter-spacing:3px;display:block;text-align:center;line-height:38px;width:320px;height:38px;border:1px solid #0591aa;background-color:#0591aa;color:#FFFFFF;font-size:19px;border-radius:1px;-moz-border-radius: 1px;-webkit-border-radius: 1px;}
+.ui-submit-blue:hover{background-color:#037f95;text-decoration:none;}
+
+/* select 下拉框 */
+.ui-combo-wrap .trigger{background: url(../images/icon.png) no-repeat;}
+.ui-combo-wrap { position: relative; display: inline-block; height: 40px; *display:inline;
+vertical-align: middle; background-color: #FFFFFF; /*border: 1px solid #cdd2d4;*/ color: #666666; overflow: hidden; zoom: 1; }
+.ui-combo-wrap .input-txt {/* background-color: #f8f8f8; */background:none; outline:none;float: left; padding: 6px 15px; height: 28px; line-height: 28px; font-size: 14px; color: #666666; border: 0; }
+.ui-combo-wrap .trigger { float: left; width: 37px; border-left:1px solid #ced3d3; height: 100%; overflow: hidden; background-position: -2px -40px; }
+.ui-combo-wrap .trigger:hover { background-position: -42px -40px; }
+.ui-combo-active, .ui-combo-active:hover { /*border: 1px solid #cdd2d4;*/  background-color:#FFFFFF;}
+.ui-combo-active:active .trigger{background-color:#f5f5f5;}
+.ui-combo-disabled .input-txt { background-color: #f0f0f0; color: #aaa; }
+.ui-combo-disabled .trigger, .ui-combo-disabled .trigger:hover { background-color: #FFFFFF; background-position: 0 -40px; }
+
+.ui-droplist-wrap { background: #f8f8f8; border-top: 1px solid #cdd2d4; box-shadow: 0 1px 3px rgba(0,0,0,0.15); z-index: 500; }
+.ui-droplist-wrap .droplist { background-color: #fff; position: relative; }
+.ui-droplist-wrap .list-item {_position:relative; padding: 2px 15px; font-size: 14px; color:#666666;line-height: 32px; cursor: default; overflow: hidden; }
+.ui-droplist-wrap .loading { line-height: 36px; padding: 5px 5px 5px 40px; background: url('img/loading.gif') no-repeat 10px center; }
+.ui-droplist-wrap .tips { line-height: 28px; padding: 5px; }
+.ui-droplist-wrap .on { background-color: #f2f2f2;color: #666666;}
+.ui-droplist-wrap .selected {  color:#666666; }
+.ui-subjectList-wrap .list-item{font-size:12px;}
+.ui-combo-wrap-small{height: 32px;}
+.ui-combo-wrap-small .input-txt{padding: 3px 5px; height: 24px;font-size: 12px;line-height: 24px;}
+.ui-droplist-wrap-small .list-item{font-size: 12px;line-height: 30px;}
+.ui-combo-wrap-small .trigger{background-position: 0 -19px;}
+.ui-combo-wrap-small .trigger:hover { background-position: -16px -19px; }
+.ui-droplist-wrap .extra-list-ctn{border-top: 1px solid #cdd2d4; background: #f5f5f5;padding-left: 5px;}

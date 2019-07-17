@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{218B6B0F-2539-4096-ACCE-2263C7F68F97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TygaSoft.TaskProcessor</RootNamespace>
+    <AssemblyName>TygaSoft.TaskProcessor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ScanQueue.cs" />
+    <Compile Include="RunQueue.cs" />
+    <Compile Include="BaseTask.cs" />
+    <Compile Include="BarcodeScan.cs" />
+    <Compile Include="ITask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockWarningTimer.cs" />
+    <Compile Include="TimedExecution.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{43f33597-906d-42ef-905c-5094ab96a7bd}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{fa2a581b-4e2e-46bd-b510-f7bf76a9a9dd}</Project>
+      <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{7477d5a7-b2e9-4ca9-ab9d-212b726265aa}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{8d926a63-b689-4bc6-9143-7629e9b54290}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IMessaging\IMessaging.csproj">
+      <Project>{19281519-9852-4b15-9298-63a0bf2cb2c3}</Project>
+      <Name>IMessaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessagingFactory\MessagingFactory.csproj">
+      <Project>{373f402e-8cf9-48c6-b9f1-c2d183f5741d}</Project>
+      <Name>MessagingFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{4af5a8fa-4976-4562-aea5-122d69d75a44}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MsmqMessaging\MsmqMessaging.csproj">
+      <Project>{ad3dee38-f75b-43c3-9e3f-8764d59a66b1}</Project>
+      <Name>MsmqMessaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlServerDAL\SqlServerDAL.csproj">
+      <Project>{7095816d-8bbd-4dc4-b6a7-f565f6783955}</Project>
+      <Name>SqlServerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SysException\SysException.csproj">
+      <Project>{03a24215-254e-4da1-9b5d-7fce88b8ca79}</Project>
+      <Name>SysException</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SysHelper\SysHelper.csproj">
+      <Project>{47a39355-ea40-45ae-8ed1-f2b1ebb416ff}</Project>
+      <Name>SysHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,73 @@
+﻿<ion-view view-title="{{ShelfMissionInfo.ReceiptOrderNo}}">
+    <ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-plus" ng-click="onToggleMenu()"></a>
+    </ion-nav-buttons>
+    <ion-content class="fm">
+        <div class="row">
+            <div class="col col-25 title">
+                <span>*</span> 货物编号
+            </div>
+            <div class="col col-75">
+                <input type="text" ng-model="ModelData.Barcode" ng-change="onInputByBarcode()" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-25 title">
+                <span>*</span>上架数量
+            </div>
+            <div class="col col-75 title">
+                <input type="text" ng-model="ModelData.Qty" ng-pattern="/^\d+$/" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-25 title">
+                推荐库位
+            </div>
+            <div class="col col-75">
+                <span ng-bind="ModelData.StockLocationAppend"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-25 title">
+                库位编号
+            </div>
+            <div class="col col-75">
+                <input type="text" ng-model="ModelData.StockLocation" />
+            </div>
+        </div>
+        <div>说明：如果不输入库位编号，则默认使用推荐库位！</div>
+
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="doScan()">
+                确定
+            </button>
+        </div>
+
+        <div class="padding">
+            <ul class="slide-tab">
+                <li ng-class="slideIndex == 0 ? 'current':''"><a ng-click="activeSlide(0)">待扫描<br /> <i class="badge badge-positive">{{ModelData.TotalScanning}}</i></a></li>
+                <li ng-class="slideIndex == 1 ? 'current':''"><a ng-click="activeSlide(1)">已扫描<br /> <i class="badge badge-positive">{{ModelData.TotalScanned}}</i></a></li>
+            </ul>
+        </div>
+        <div class="pdlr10" ng-show="slideIndex == 0">
+            <div class="row">
+                <div class="col col-50">货物编码</div>
+                <div class="col col-50">数量</div>
+            </div>
+            <div class="row" ng-repeat="item in ListScanning">
+                <div class="col col-50">{{item.ProductCode}}</div>
+                <div class="col col-50">{{item.Qty}}</div>
+            </div>
+        </div>
+        <div class="pdlr10" ng-show="slideIndex == 1">
+            <div class="row">
+                <div class="col col-50">货物编码</div>
+                <div class="col col-50">数量</div>
+            </div>
+            <div class="row" ng-repeat="item in ListScanned">
+                <div class="col col-50">{{item.ProductCode}}</div>
+                <div class="col col-50">{{item.Qty}}</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
