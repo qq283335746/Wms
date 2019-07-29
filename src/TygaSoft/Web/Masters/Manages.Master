@@ -64,7 +64,7 @@
         <div id="pageMain" data-options="region:'center',title:'当前位置：'" style="padding:5px;">
             <asp:SiteMapPath ID="SitePaths" runat="server" ClientIDMode="Static" ParentLevelsDisplayed="2" SiteMapProvider="CustomSiteMapProvider" />
             <asp:ContentPlaceHolder ID="cphMain" runat="server" />
-            <span id="lbAppId" runat="server" style="display:none;"></span>
+            <span id="lbAppId" runat="server" style="display:none;">100004</span>
         </div>
     </form>
     <div id="dlgWaiting" data-options="closed:true,modal:true,collapsible:false,border:false" title="" style="width:32px;height:32px;padding:0;margin:0;"></div>

@@ -11,10 +11,15 @@ namespace TygaSoft.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(User.Identity.IsAuthenticated)
+            if (!Page.IsPostBack)
             {
-                Response.Redirect("/wms/u/t.html");
+                Response.Redirect("~/wms/u/t.html");
             }
+
+            //if(User.Identity.IsAuthenticated)
+            //{
+            //    Response.Redirect("~/wms/u/t.html");
+            //}
         }
     }
 }

@@ -451,7 +451,7 @@ namespace TygaSoft.WcfService
                 if (userMenuList == null || userMenuList.Count() == 0) return ResResult.Response(false, MC.Data_InvalidExist, "");
                 if (string.IsNullOrWhiteSpace(parentName) || HttpContext.Current.User.IsInRole("Administrators"))
                 {
-                    parentName = "100000";
+                    parentName = "首页";
                 }
                 var parentInfo = userMenuList.FirstOrDefault(m => (m.Title.Contains(parentName)));
                 if (parentInfo == null) return ResResult.Response(false, MC.Data_InvalidExist, "");
