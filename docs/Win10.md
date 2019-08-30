@@ -35,6 +35,6 @@
 ![sqlserver](../images/SqlServer003.png)
 
 
-至此，打开浏览器，输入：http://localhost/Asset 回车，输入登录账号并登录，即可进入后台管理页。
+至此，打开浏览器，输入：http://localhost/Wms 回车，输入登录账号并登录，即可进入后台管理页。
 
 ![web](../images/wms001.png)
