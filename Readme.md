@@ -25,6 +25,10 @@ https://visualstudio.microsoft.com/zh-hans/downloads/
 
 6、运行，看到登录界面，登录账号：admin  admin123456
 
+安装与部署参考：
+
+[windows iis10 部署](./docs/Win10.md)
+
 Wms（智能仓储配送一体化平台）技术点标签：
 
 后端：webservice、wcf、linq、ado.net、sql server、三层架构
@@ -37,11 +41,18 @@ Wms（智能仓储配送一体化平台）技术点标签：
 
 Wms（智能仓储配送一体化平台）截图如下：
 
-![image](https://github.com/qq283335746/My/blob/master/MyImages/Wms/wms001.png)
-![image](https://github.com/qq283335746/My/blob/master/MyImages/Wms/wms002.png)
-![image](https://github.com/qq283335746/My/blob/master/MyImages/Wms/wms003.png)
-![image](https://github.com/qq283335746/My/blob/master/MyImages/Wms/wms004.png)
-![image](https://github.com/qq283335746/My/blob/master/MyImages/Wms/wms005.png)
-![image](https://github.com/qq283335746/My/blob/master/MyImages/Wms/wms006.png)
-![image](https://github.com/qq283335746/My/blob/master/MyImages/Wms/wms007.png)
-![image](https://github.com/qq283335746/My/blob/master/MyImages/Wms/wms008.png)
+![image](./images/wms001.png)
+
+![image](./images/wms002.png)
+
+![image](./images/wms003.png)
+
+![image](./images/wms004.png)
+
+![image](./images/wms005.png)
+
+![image](./images/wms006.png)
+
+![image](./images/wms007.png)
+
+![image](./images/wms008.png)
